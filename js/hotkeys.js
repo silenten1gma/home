@@ -1,93 +1,14 @@
+//A dictionary containing the sites with the corresponding hotkeys
+const sites = {"R":"https://www.reddit.com", "T":"http://www.4channel.org/g/", "D":"http://www.discord.com/login"}
+
+
 // social stuff
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'r' ) {
-        event.preventDefault();
-        window.location.href = "https://www.reddit.com";
-    }
-})
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 't' ) {
-        event.preventDefault();
-        window.location.href = "http://www.4channel.org/g/";
-    }
-})
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'd' ) {
-        event.preventDefault();
-        window.location.href = "http://www.discord.com/login";
-    }
-})
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'm' ) {
-        event.preventDefault();
-        window.location.href = "http://m.me";
-    }
-})
-
-// learn
-
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'w' ) {
-        event.preventDefault();
-        window.location.href = "http://www.w3schools.com";
-    }
-})
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'f' ) {
-        event.preventDefault();
-        window.location.href = "http://www.freecodecamp.org";
-    }
-})
-
-// work 
-
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'g' ) {
-        event.preventDefault();
-        window.location.href = "https://github.com";
-    }
-})
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'p' ) {
-        event.preventDefault();
-        window.location.href = "http://codepen.io/pen";
-    }
-})
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'c' ) {
-        event.preventDefault();
-        window.location.href = "http://coolors.co";
-    }
-})
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'x' ) {
-        event.preventDefault();
-        window.location.href = "http://pixlr.com/x/";
-    }
-})
-
-// misc 
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'y' ) {
-        event.preventDefault();
-        window.location.href = "https://yewtu.be/";
-    }
-})
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'm' && event.altKey ) {
-        event.preventDefault();
-        window.location.href = "http://mega.nz";
-    }
-})
-window.addEventListener('keydown',(event)=>{
-    if (event.key === 'b' ) {
-        event.preventDefault();
-        window.location.href = "http://thepiratebay.org";
-    }
-})
-window.addEventListener('keydown',(event)=>{
-    if (event.key === '1' ) {
-        event.preventDefault();
-        window.location.href = "http://1337x.to";
-    }
+window.addEventListener('keydown', (event) => {
+    //  Get the ASCII key code (int) of the key pressed then convert it to (string) the corresponding letter name
+    let pressed_key = String.fromCharCode(event.keyCode);
+    event.preventDefault();
+    //  Lookup the corresponding key value in the dictionary
+    let target_site = sites[pressed_key];
+    //  Change windows location to the corresponding site
+    window.location.href = target_site;
 })

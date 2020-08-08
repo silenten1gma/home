@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --black : #00171F;
+    --dark-blue: #003459;
+    --blue: #007EA7;
+    --light-blue: #00A8E8;
+    --white: #FFFFFF;
+}
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Raleway', sans-serif;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;   
+    margin-top: 50px;
+}
+.curs{
+    animation: blinking 1s infinite;
+}
+@keyframes blinking{
+    0%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.3;
+    }
+}
+
+.clock{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+
+/* sites */
+.sites{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--blue);
+}
+
+
+.box:hover{
+    transform: scale(1.1);
+    transition: 100ms ease-in-out;
+}
+.box:not(hover){
+    transform: scale3d(1);
+    transition: 100ms ease-in-out;
+}
+
+.box-head{
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.box a{
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 2.5px;
+}
+.box a:hover{
+    cursor: pointer;
+    color: var(--light-blue);
+    transition: 200ms ease-in-out;
+}
+.box a:not(hover){
+    color: var(--white);
+    transition: 150ms ease-in-out;
+}
+.footer{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer a{
+    color: var(--white);
+    text-decoration: none;
+}
+.footer a:hover{
+    color: var(--blue); 
+}
+@media (max-width: 400px){
+    .sites{
+        flex-direction: column;
+    }
+    .box{
+        margin-bottom: 20px;
+    }
+    .title{
+        font-size: 11px;
+    }
+    .clock{
+        margin-top: 25px;
+    }
+}
+.hotkeylink{
+    margin-top: 30px;
+    text-align: center;
+}
+.hotkeylink a{
+    text-decoration: none;
+    color: var(--white);
+}
+.hotkeylink a:hover{
+    cursor: pointer;
+    color: var(--light-blue);
+    transition: 200ms ease-in-out;
+}
+.hotkeylink a:not(hover){
+    color: var(--white);
+    transition: 150ms ease-in-out;
+}

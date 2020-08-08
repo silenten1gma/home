@@ -1,6 +1,6 @@
 //A dictionary containing the sites with the corresponding hotkeys
 const sites = { "R": "https://www.reddit.com", "T": "http://www.4channel.org/g/", "D": "http://www.discord.com/login", "M":"https://m.me", "W":"https://www.w3schools.com", 
-               "F":"https://www.freecodecamp.org","G":"https://github.com/login", "P":"https://codepen.io/pen","C":"https://coolors.co", 
+               "F":"https://www.freecodecamp.org","G":"https://github.com/", "P":"https://codepen.io/pen","C":"https://coolors.co", 
                "X":"https://pixlr.com/x/","Y":"https://yewtu.be","A":"https://mega.nz","B":"https://thepiratebay.org/index.html","H":"https://1337x.to"}
 
 

@@ -8,7 +8,7 @@ const sites = { "R": "https://www.reddit.com", "T": "http://www.4channel.org/g/"
 window.addEventListener('keydown', (event) => {
     //  Get the ASCII key code (int) of the key pressed then convert it to (string) the corresponding letter name
     let pressed_key = String.fromCharCode(event.keyCode);
-    event.preventDefault();
+    //event.preventDefault();
     let keys = Object.keys(sites);
     if (keys.includes(pressed_key)) {
         //  Lookup the corresponding key value in the dictionary

@@ -4,7 +4,6 @@ akham sweet akham
 
 This is a regular home page with added keyboard shortcut functionalities that can be modified to anyone's liking.
 
-(Here is the link to it)[https://akham.netlify.app/]
 
 # how to use :
 There is a [list of hotkeys](https://akham.netlify.app/hotkeys.html)

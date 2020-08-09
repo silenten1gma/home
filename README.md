@@ -9,8 +9,9 @@ There is a [list of hotkeys](https://akham.netlify.app/hotkeys.html)
 You can checkout.
 
 # how do I modify the page:
+
 First run the following command on your terminal
->on windows you will have to install git
+ **on windows you will have to install git**
 `git clone https://github.com/silentne1gma/home.git`
 This will clone the repo to your local machine
 With whatever text editor you like open index.html

@@ -1,19 +1,130 @@
-//A dictionary containing the sites with the corresponding hotkeys
-const sites = { "R": "https://www.reddit.com", "T": "http://www.4channel.org/g/", "D": "http://www.discord.com/login", "M":"https://m.me", "W":"https://www.w3schools.com", 
-               "F":"https://www.freecodecamp.org","G":"https://github.com/", "P":"https://codepen.io/pen","C":"https://coolors.co", 
-               "X":"https://pixlr.com/x/","Y":"https://yewtu.be","A":"https://mega.nz","B":"https://thepiratebay.org/index.html","H":"https://1337x.to"}
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'g' ) {
+        event.preventDefault();
+        window.location.href = "http://github.com";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'p' ) {
+        event.preventDefault();
+        window.location.href = "http://protonmail.com";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'c' ) {
+        event.preventDefault();
+        window.location.href = "https://coolors.co/";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'x' ) {
+        event.preventDefault();
+        window.location.href = "https://pixlr.com/x/";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.ctrlKey && event.key === 'r' ) {
+        event.preventDefault();
+        window.location.href = "https://repl.it/";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.key === '9') {
+        event.preventDefault();
+        window.location.href = "https://9animes.ru/";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'y') {
+        event.preventDefault();
+        window.location.href = "https://yewtu.be/";
+    }
+})
 
+window.addEventListener('keydown',(event)=>{
+    if (event.key === '4') {
+        event.preventDefault();
+        window.location.href = "https://4chan.org/";
+    }
+})
 
-// social stuff
-window.addEventListener('keydown', (event) => {
-    //  Get the ASCII key code (int) of the key pressed then convert it to (string) the corresponding letter name
-    let pressed_key = String.fromCharCode(event.keyCode);
-    
-    let keys = Object.keys(sites);
-    if (keys.includes(pressed_key)) {
-        //  Lookup the corresponding key value in the dictionary
-        let target_site = sites[pressed_key];
-        //  Change windows location to the corresponding site
-        window.location.href = target_site;
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'f') {
+        event.preventDefault();
+        window.location.href = "https://www.fushaar.com";
+    }
+})
+
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'm') {
+        event.preventDefault();
+        window.location.href = "https://mega.nz";
+    }
+})
+
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'u') {
+        event.preventDefault();
+        window.location.href = "https://www.unitconverters.net";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'a') {
+        event.preventDefault();
+        window.location.href = "https://www.aspose.app/";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 't') {
+        event.preventDefault();
+        window.location.href = "http://thepiratebay.org/index.html";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.key === '1') {
+        event.preventDefault();
+        window.location.href = "https://1337x.to";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'w') {
+        event.preventDefault();
+        window.location.href = "https://www.wunderground.com/";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'r') {
+        event.preventDefault();
+        window.location.href = "https://www.reddit.com/";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.ctrlKey && event.key === 'f') {
+        event.preventDefault();
+        window.location.href = "https://www.facebook.com";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.key === 'd') {
+        event.preventDefault();
+        window.location.href = "https://www.discord.com";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.ctrlKey && event.key === 'm') {
+        event.preventDefault();
+        window.location.href = "https://m.me";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.ctrlKey && event.key === 't') {
+        event.preventDefault();
+        window.location.href = "https://twitter.com";
+    }
+})
+window.addEventListener('keydown',(event)=>{
+    if (event.shiftKey && event.key === 'R') {
+        event.preventDefault();
+        window.location.href = "https://ruqqus.com";
     }
 })

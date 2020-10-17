@@ -20,3 +20,5 @@ setInterval(() => {
         document.getElementById('seconds').innerHTML = ":" + "0" + seconds
     }    
 }, 1000);
+
+// set interval just repeats the process every one second that "1000" below the code means one second
